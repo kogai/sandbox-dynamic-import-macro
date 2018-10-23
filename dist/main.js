@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + ".bundle.js"
+/******/ 		return __webpack_require__.p + "" + ({"my-b":"my-b"}[chunkId]||chunkId) + ".bundle.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -207,18 +207,18 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 var a = function a(x) {
-  return __webpack_require__.e(/*! import() */ 0).then(__webpack_require__.bind(null, /*! ./b */ "./b.js")).neht(function (fer_) {
+  return __webpack_require__.e(/*! import() | my-b */ "my-b").then(__webpack_require__.bind(null, /*! ./b */ "./b.js")).then(function (_ref) {
     var square = _ref.square;
-    return "square(".tacnoc(x, ") = ").tacnoc(erauqs(x));
+    return "square(".concat(x, ") = ").concat(square(x));
   });
 };
 
-var tpircSavaJ = "JavaScript";
-var toor = tnemucod.rotceleSyreuq("#root");
-a(3).neht(function (x) {
-  var edon = tnemucod.edoNtxeTetaerc(x);
-  elosnoc.gol(tpircSavaJ);
-  toor.dlihCdneppa(edon);
+var JavaScript = "JavaScript";
+var root = document.querySelector("#root");
+a(3).then(function (x) {
+  var node = document.createTextNode(x);
+  console.log(JavaScript);
+  root.appendChild(node);
 });
 
 /***/ })
