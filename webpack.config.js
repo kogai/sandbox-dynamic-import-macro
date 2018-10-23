@@ -28,8 +28,8 @@ module.exports = {
   context: input,
   entry: "./a.js",
   output: {
-    filename: "[name].[chunkhash].js",
-    chunkFilename: "[name].[chunkhash].bundle.js",
+    filename: "[name].js",
+    chunkFilename: "[name].bundle.js",
     path: output
   },
   devtool: "source-map",

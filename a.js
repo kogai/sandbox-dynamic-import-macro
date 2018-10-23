@@ -1,12 +1,8 @@
-const root = document.querySelector("#root");
-
-const a = x => {
-  return import(/* webpackChunkName: "my-b" */ "./b").then(({ square }) => {
-    return `square(${x}) = ${square(x)}`;
-  });
-};
+const a = x => import("./b")
+  .then(({ square }) => `square(${x}) = ${square(x)}`);
 
 const JavaScript = "JavaScript";
+const root = document.querySelector("#root");
 
 a(3).then(x => {
   const node = document.createTextNode(x);
