@@ -1,17 +1,16 @@
+const babel = require("@babel/core");
+const {parse} = require("@babel/parser");
+
 module.exports = function ({ types: t }) {
   return {
     visitor: {
-      Identifier(path) {
-        const name = path.node.name;
-        // reverse the name: JavaScript -> tpircSavaJ
-        path.node.name = name.split("").reverse().join("");
-      },
-      Import(path) {
-        console.log(path.type);
-        console.log(path.node);
-        console.log(path.addComment);
-        // path.addComment("leading", "THIS IS MY COMMENT")
-        console.log("------");
+      Import(path, state) {
+        path.parentPath.traverse({
+          StringLiteral(path) {
+            console.log(path.node.value);
+            path.addComment("leading", ` webpackChunkName: "${path.node.value}" `)
+          },
+        });
       }
     }
   };

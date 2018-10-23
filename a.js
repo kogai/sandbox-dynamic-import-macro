@@ -1,4 +1,4 @@
-const a = x => import(/* webpackChunkName: "my-b" */ "./b")
+const a = x => import("./b")
   .then(({ square }) => `square(${x}) = ${square(x)}`);
 
 const JavaScript = "JavaScript";

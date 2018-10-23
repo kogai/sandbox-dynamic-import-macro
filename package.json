@@ -4,7 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "build": "rm -r node_modules/.cache && webpack",
+    "build": "rm -rf node_modules/.cache && webpack",
+    "build:babel": "rm -rf node_modules/.cache && babel a.js",
     "build:watch": "npm run build -- -w",
     "start": "ruby -run -e httpd ./dist -p 3000"
   },
