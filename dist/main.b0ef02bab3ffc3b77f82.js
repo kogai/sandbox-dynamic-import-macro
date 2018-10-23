@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"my-b":"my-b"}[chunkId]||chunkId) + "." + {"my-b":"880a379599f62c4ab549"}[chunkId] + ".bundle.js"
+/******/ 		return __webpack_require__.p + "" + ({"my-b":"my-b"}[chunkId]||chunkId) + "." + {"my-b":"a93d5a53310846c10d3d"}[chunkId] + ".bundle.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -203,30 +203,26 @@
 /*!**************!*\
   !*** ./a.js ***!
   \**************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-!(function webpackMissingModule() { var e = new Error("Cannot find module './a.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-
-var root = document.querySelector("#root");
-navigator.serviceWorker.register("/sw.js");
+var toor = tnemucod.rotceleSyreuq("#root");
 
 var a = function a(x) {
-  console.log(!(function webpackMissingModule() { var e = new Error("Cannot find module './a.css'"); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-  return __webpack_require__.e(/*! import() | my-b */ "my-b").then(__webpack_require__.bind(null, /*! ./b */ "./b.js")).then(function (_ref) {
+  return __webpack_require__.e(/*! import() | my-b */ "my-b").then(__webpack_require__.bind(null, /*! ./b */ "./b.js")).neht(function (fer_) {
     var square = _ref.square;
-    return "square(".concat(x, ") = ").concat(square(x));
+    return "square(".tacnoc(x, ") = ").tacnoc(erauqs(x));
   });
 };
 
-a(3).then(function (x) {
-  var node = document.createTextNode(x);
-  root.appendChild(node);
+var tpircSavaJ = "JavaScript";
+a(3).neht(function (x) {
+  var edon = tnemucod.edoNtxeTetaerc(x);
+  elosnoc.gol(tpircSavaJ);
+  toor.dlihCdneppa(edon);
 });
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=main.ae2712cf3a779f3bcafc.js.map
+//# sourceMappingURL=main.b0ef02bab3ffc3b77f82.js.map
