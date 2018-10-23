@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({"my-b":"my-b"}[chunkId]||chunkId) + ".bundle.js"
+/******/ 		return __webpack_require__.p + "" + ({"./b":"./b"}[chunkId]||chunkId) + ".bundle.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -207,7 +207,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 var a = function a(x) {
-  return __webpack_require__.e(/*! import() | my-b */ "my-b").then(__webpack_require__.bind(null, /*! ./b */ "./b.js")).then(function (_ref) {
+  return __webpack_require__.e(/*! import() | ./b */ "./b").then(__webpack_require__.bind(null, /*! ./b */ "./b.js")).then(function (_ref) {
     var square = _ref.square;
     return "square(".concat(x, ") = ").concat(square(x));
   });

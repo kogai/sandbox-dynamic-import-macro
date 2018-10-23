@@ -1,4 +1,4 @@
-(window["webpackJsonp"] = window["webpackJsonp"] || []).push([[0],{
+(window["webpackJsonp"] = window["webpackJsonp"] || []).push([["./b"],{
 
 /***/ "./b.js":
 /*!**************!*\
@@ -17,4 +17,4 @@ var square = function square(x) {
 /***/ })
 
 }]);
-//# sourceMappingURL=0.bundle.js.map
+//# sourceMappingURL=b.bundle.js.map
