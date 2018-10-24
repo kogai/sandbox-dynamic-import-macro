@@ -1,3 +1,5 @@
+import {c} from "./c"
+
 const a = x => import("./b")
   .then(({ square }) => `square(${x}) = ${square(x)}`);
 

@@ -203,8 +203,13 @@
 /*!**************!*\
   !*** ./a.js ***!
   \**************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _c__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./c */ "./c.js");
+
 
 var a = function a(x) {
   return __webpack_require__.e(/*! import() | ./b */ "./b").then(__webpack_require__.bind(null, /*! ./b */ "./b.js")).then(function (_ref) {
@@ -220,6 +225,22 @@ a(3).then(function (x) {
   console.log(JavaScript);
   root.appendChild(node);
 });
+
+/***/ }),
+
+/***/ "./c.js":
+/*!**************!*\
+  !*** ./c.js ***!
+  \**************/
+/*! exports provided: c */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "c", function() { return c; });
+var c = function c(x) {
+  return x * x * x;
+};
 
 /***/ })
 
